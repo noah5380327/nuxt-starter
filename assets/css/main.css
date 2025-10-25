@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme static {
+  --color-uq-purple-50: #f5f3ff;
+  --color-uq-purple-100: #ede9fe;
+  --color-uq-purple-200: #ddd6fe;
+  --color-uq-purple-300: #c4b5fd;
+  --color-uq-purple-400: #a78bfa;
+  --color-uq-purple-500: #8b5cf6;
+  --color-uq-purple-600: #7c3aed;
+  --color-uq-purple-700: #6d28d9;
+  --color-uq-purple-800: #5b21b6;
+  --color-uq-purple-900: #4c1d95;
+  --color-uq-purple-950: #2e1065;
+}
