@@ -92,12 +92,7 @@ const fields: AuthFormField[] = [
 
 const schema = z
   .object({
-    email: z
-      .string('Email is required')
-      .email('Invalid email')
-      .refine((email) => email.includes('@uq.edu.au') || email.includes('@student.uq.edu.au'), {
-        message: 'Invalid UQ email',
-      }),
+    email: z.string('Email is required').email('Invalid email'),
     password: z
       .string('Password is required')
       .min(8, 'Must be at least 8 characters')
