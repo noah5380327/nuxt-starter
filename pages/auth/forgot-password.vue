@@ -75,7 +75,7 @@
           <p class="text-sm text-green-700">
             <strong>Hint: </strong>
             If you do not receive the email, please check your spam folder or make sure you have
-            entered the correct UQ email address.
+            entered the correct email address.
           </p>
         </div>
       </div>
