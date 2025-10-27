@@ -49,6 +49,7 @@ export const useAuth = () => {
 
   const resetPasswordForEmail = async (email: string) => {
     return await apiRequest(async () => {
+      console.log(`${process.env.NUXT_PUBLIC_APP_URL}/auth/reset-password`)
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${process.env.NUXT_PUBLIC_APP_URL}/auth/reset-password`,
       })
