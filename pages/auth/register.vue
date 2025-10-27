@@ -34,7 +34,7 @@
         >
           <UIcon name="i-lucide-check-circle" class="text-green-600 text-2xl" />
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Reset email sent</h3>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Email sent</h3>
         <p class="text-gray-600 mb-4">
           We have sent a sign up link to
           <strong class="text-primary-600">{{ submittedEmail }}</strong
