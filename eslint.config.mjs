@@ -8,8 +8,8 @@ export default withNuxt({
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/no-unused-components': 'warn',
     'prefer-const': 'error',
-    'no-unused-vars': 'warn',
     'no-var': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/unified-signatures': 'off',
   },
 })

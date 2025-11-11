@@ -7,15 +7,14 @@
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode()
-colorMode.preference = 'light'
+import { PRODUCT_NAME } from '~/constants/common'
 
 const route = useRoute()
 
 watch(
   () => route.path,
   () => {
-    const defaultSubTitle = 'Nuxt Starter'
+    const defaultSubTitle = PRODUCT_NAME
 
     useHead({
       title: route.meta.title ? `${route.meta.title} - ${defaultSubTitle}` : defaultSubTitle,

@@ -16,10 +16,6 @@
             <UFormField label="Email">
               <UInput :value="user?.email" disabled />
             </UFormField>
-
-            <UFormField label="User ID">
-              <UInput :value="user?.id" disabled />
-            </UFormField>
           </div>
         </div>
       </UCard>
@@ -56,7 +52,7 @@ const { user } = useAuth()
 
 const showChangePasswordModal = ref(false)
 
-const onPasswordChangeSuccess = () => {
+function onPasswordChangeSuccess() {
   showChangePasswordModal.value = false
 }
 </script>

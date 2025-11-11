@@ -11,6 +11,10 @@ export default defineNuxtConfig({
         'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1',
     },
   },
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+  },
   devServer: {
     port: 3000,
     host: 'localhost',

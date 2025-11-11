@@ -68,10 +68,12 @@
 <script setup lang="ts">
 import * as z from 'zod'
 
-const emit = defineEmits<{
-  success: []
-  cancel: []
-}>()
+interface Emits {
+  (e: 'success'): void
+  (e: 'cancel'): void
+}
+
+const emit = defineEmits<Emits>()
 
 const schema = z
   .object({

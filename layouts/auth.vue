@@ -44,13 +44,15 @@
 </template>
 
 <script setup lang="ts">
+import { PRODUCT_NAME } from '~/constants/common'
+
 interface Feature {
   name: string
   icon: string
   description: string
 }
 
-const title: string = 'Welcome back!'
+const title: string = PRODUCT_NAME
 
 const features: Feature[] = [
   {

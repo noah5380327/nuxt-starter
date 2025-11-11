@@ -2,12 +2,12 @@
   <header class="bg-white shadow-sm border-b border-gray-200">
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-3">
+        <ULink to="/dashboard" class="flex items-center space-x-3">
           <div class="w-8 h-8 bg-primary-600 rounded flex items-center justify-center">
             <UIcon name="i-lucide-graduation-cap" class="text-white text-3xl" />
           </div>
-          <span class="text-xl font-semibold text-gray-900">Nuxt Starter</span>
-        </div>
+          <span class="text-xl font-semibold text-gray-900">{{ title }}</span>
+        </ULink>
 
         <nav class="hidden md:flex space-x-8">
           <ULink
@@ -49,10 +49,12 @@
 
 <script setup lang="ts">
 import type { DropdownMenuItem } from '@nuxt/ui'
+import { PRODUCT_NAME } from '~/constants/common'
 
 const { user, signOut } = useAuth()
 const userMenuOpen = ref(false)
 
+const title: string = PRODUCT_NAME
 const userMenuItems: DropdownMenuItem[][] = [
   [
     {
